@@ -1,11 +1,5 @@
 # Jack-Man: Un Clon de Pac-Man en Jack para Nand2Tetris
 
-Este proyecto es una implementación del clásico juego Pac-Man, desarrollado enteramente en el lenguaje de programación Jack, diseñado para ejecutarse en la plataforma Hack simulada del curso Nand2Tetris.
-
-## Descripción del Juego
-
-"Jack-Man" recrea la experiencia fundamental de Pac-Man. El jugador controla a Jack-Man, un personaje que debe navegar por un laberinto comiendo todas las píldoras mientras evita a los fantasmas que lo persiguen.
-
 **Características Principales:**
 
 *   **Personaje Principal (Jack-Man):** Controlado por el usuario mediante las teclas de flecha.
@@ -19,7 +13,7 @@ Este proyecto es una implementación del clásico juego Pac-Man, desarrollado en
 
 ## Estructura del Proyecto
 
-El juego está implementado utilizando un enfoque orientado a objetos, con varias clases Jack que manejan diferentes aspectos del juego:
+El juego está implementado utilizando un enfoque orientado a objetos
 
 *   **`Main.jack`**: Punto de entrada del programa. Inicializa y ejecuta el juego.
 *   **`Game.jack`**: Clase orquestadora principal. Gestiona el flujo del juego, los estados (inicio, en curso, game over) y la interacción entre los diferentes componentes.
@@ -46,7 +40,6 @@ El juego está implementado utilizando un enfoque orientado a objetos, con varia
 *   **Tecla 'R' (o 'r'):** Reinicia el juego después de un "Game Over" o en cualquier momento durante la partida.
     *   'R': Código ASCII `82`
     *   'r': Código ASCII `114`
-*   *(Opcional: Si se implementan otras teclas, como 'Q' para salir, se listarían aquí).*
 
 ## Cómo Compilar y Ejecutar
 
@@ -71,23 +64,3 @@ El juego está implementado utilizando un enfoque orientado a objetos, con varia
     *   Navega y selecciona el **directorio** `NombreDeTuCarpetaDelJuego` (el que contiene los archivos `.vm` generados).
     *   Ajusta la velocidad de animación del emulador a "Fastest" (y "No animation" si está disponible) para un mejor rendimiento.
     *   Presiona el botón de "Run" (o Play).
-
-## Personalizaciones Realizadas
-
-*   Se cambió la tecla de reinicio de F2 a 'R' (o 'r').
-*   Se modificaron los textos en la pantalla de bienvenida (`Splash.jack`) para incluir "[Tu Nombre]".
-*   Se actualizaron los mensajes de "Game Over" y la indicación de la tecla de reinicio.
-*   *(Añade aquí cualquier otra personalización importante que hayas hecho, como cambios en el diseño del laberinto, comportamiento de los fantasmas, power-ups, etc.)*
-
-## Posibles Mejoras Futuras
-
-*   Diseño de laberintos más dinámico o cargado desde una representación de datos.
-*   IA de los fantasmas más avanzada (Blinky, Pinky, Inky, Clyde con comportamientos distintos).
-*   Implementación de "Power Pellets" y el estado de vulnerabilidad de los fantasmas.
-*   Animaciones más fluidas para Pac-Man (abrir/cerrar boca) y los fantasmas.
-*   Múltiples niveles con diferentes laberintos o velocidades.
-*   Efectos de sonido.
-
----
-
-Este proyecto fue desarrollado como parte del curso de Arquitectura de Computadores, basado en los principios y herramientas de Nand2Tetris.
